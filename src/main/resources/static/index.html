@@ -1,0 +1,41 @@
+<!doctype html>
+<html ng-app="facts">
+<head>
+    <title>Facts</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="./css/style.css" type="text/css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    <script src="./js//loader.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="./js/colorize.js"></script>
+</head>
+
+<body ng-controller="Fact" onload="colorize()" data-ng-init="getRequest()">
+    <nav class="navbar navbar-expand-sm bg-white  fixed-top">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="https://www.linkedin.com/in/hishammaged10/" class="navbar-brand" target="_blank"> Hisham Maged </a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link"> CV </a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link"> eyo </a>
+            </li>
+        </ul>
+    </nav>
+    
+    <div id="fact" class="container-fluid">
+        <h1>{{fact.text}}</h1>
+    </div>
+
+    <div id="next" class="container" >
+        <a class="carousel-control-next" onclick="colorize()" ng-click="getRequest()">
+                <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+body{
+    background-color: navy;
+}
+a{
+    color:black;
+}
+#fact{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+  
+    min-height:100vh;
+    text-align: center;
+    background: rgb(255,255,255);
+    background: linear-gradient(350deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 800%, rgba(255,255,255,1) 100%); 
+}
+
+#next{
+    display:inline-block;
+    position:absolute;
+    bottom:8%;
+    right:2%
+}
+nav{
+    box-shadow: 10px -2px 7px gray
+}
